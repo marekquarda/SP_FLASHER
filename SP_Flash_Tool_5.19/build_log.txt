@@ -1,0 +1,15 @@
+make[1]: Entering directory '/home/marra/Projects/SpFlash/SP_Flash_Tool_5.19'
+mkdir -p ../_Output/linux/debug
+cd ../_Output/linux/debug;pwd;/usr/bin/qmake /home/marra/Projects/SpFlash/SP_Flash_Tool_5.19 -r -spec linux-g++-64 CONFIG+=debug;make;
+/home/marra/Projects/SpFlash/_Output/linux/debug
+make[2]: Entering directory '/home/marra/Projects/SpFlash/_Output/linux/debug'
+g++ -c -m64 -pipe -g -Wall -Wextra -D_REENTRANT -fPIC -DQT_NO_CAST_FROM_CAST -D_LINUX -DQT_WEBKIT_LIB -DQT_GUI_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I../../../SP_Flash_Tool_5.19 -I. -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWebKit -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtXmlPatterns -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o Connection.o ../../../SP_Flash_Tool_5.19/Conn/Connection.cpp
+In file included from ../../../SP_Flash_Tool_5.19/Conn/Connection.cpp:13:
+../../../SP_Flash_Tool_5.19/Conn/../Utility/Utils.h:8:10: fatal error: QAbstractButton: No such file or directory
+    8 | #include <QAbstractButton>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [Makefile:2637: Connection.o] Error 1
+make[2]: Leaving directory '/home/marra/Projects/SpFlash/_Output/linux/debug'
+make[1]: *** [Build/build-linux.mk:44: all] Error 2
+make[1]: Leaving directory '/home/marra/Projects/SpFlash/SP_Flash_Tool_5.19'
